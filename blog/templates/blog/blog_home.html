@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Home</title>
+    <!-- Load CSS -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'blog/css/styles.css' %}">
+</head>
+<body>
+    <h1>Welcome to the Blog App!</h1>
+    <p>This is the blog home page with an HTML template.</p>
+
+    <!-- Add Image -->
+    <img src="{% static 'blog/images/example.jpg' %}" alt="Example Image" width="300">
+
+    <!-- Load JS -->
+    <script src="{% static 'blog/js/scripts.js' %}"></script>
+</body>
+</html>

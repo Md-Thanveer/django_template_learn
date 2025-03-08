@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice App</title>
+    <!-- Load CSS -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'practice/css/styles.css' %}">
+</head>
+<body>
+    <h1>Welcome to the Practice App!</h1>
+    <p>This is a practice app to learn Django models with HTML, CSS, and JS.</p>
+
+    <!-- Display Products from the Database -->
+    <h2>Products List</h2>
+    <ul>
+        {% for product in items %}
+            <li>{{ product.name }}: {{ product.description }}</li>
+        {% endfor %}
+    </ul>
+
+    <!-- Add Image -->
+    <img src="{% static 'practice/images/example.jpg' %}" alt="Example Image" width="300">
+
+    <!-- Load JS -->
+    <script src="{% static 'practice/js/scripts.js' %}"></script>
+</body>
+</html>
